@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href ="style.css" >
+    <title>Document</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Type Pro</h1>
+    <div tag = "typeBox">
+        <div class ="center">
+            <p id = "givenText" class = "givenText"></p>
+
+        <input id = "textInput" onpaste = "return disablePaste()" onkeyup="typing()">
+        </div>
+
+        <p id="wpmText">WPM: </p>
+        <p id = timeText>time </p> 
+        <p id = "accuracyText">accuracy</p>
+        <p id = "winText"></p>
+        <button  id = ajaxButton onclick = logMovies()>Get a new String to type</button>
+    </div>
+</body>
+<script src = script.js></script>
+</html>

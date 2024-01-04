@@ -1,0 +1,59 @@
+
+
+/* Resetting default browser styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E8C1C5;
+}
+
+/* Basic styling for header */
+h1 {
+    background-color: #011638;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Styling for navigation */
+#textInput{
+    padding: 10px;
+    width: 80%;
+    height: 100px;
+    text-align: left;
+    vertical-align: text=top;
+    flex:1 ;
+}
+#givenText{
+    text-align: center;
+    
+}
+.center{
+    text-align: center;
+}
+#ajaxButton{
+    width: 20%;
+    height: 20%;
+
+}
+
+/* Styling for main content */
+.main-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    flex: 1;
+    
+}
+
+
+
+/*
+color pallete 
+#011638
+#2E294E
+#9055A2
+#D499B9
+#E8C1C5
+*/
