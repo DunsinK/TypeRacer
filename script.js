@@ -38,16 +38,7 @@ function setText(textToGive){
 function stats(){
 
 }
-function format(obj)
-{
-    var str = JSON.stringify(obj, 0, 4),
-        arr = str.match(/".*?":/g);
 
-    for(var i = 0; i < arr.length; i++)
-        str = str.replace(arr[i], arr[i].replace(/"/g,''));
-
-    return str;
-}
 function disablePaste(){
     alert("you cannot paste sry ;(")
 }
@@ -67,34 +58,17 @@ async function logMovies() {
                 console.log(data[0]['quote'])
                 exampleText = data[0]['quote'];
                 givenText.innerText = data[0]['quote'];
+                time = 0;
             })
             .catch(err => {
                 console.log(`error ${err}`)
             }); 
 
-
-    /*    var category = 'happiness'
-$.ajax({
-    method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
-    headers:  { 'X-Api-Key': 'H6Q6U3Drcib7eGfS8qSl6A==iCuxXhnNMFYnlMRk'},
-    contentType: 'application/json',
-    success: function(result) {
-        console.log(result);
-    },
-    error: function ajaxError(jqXHR) {
-        console.error('Error: ', jqXHR.responseText);
-    }
-});*/
-    //H6Q6U3Drcib7eGfS8qSl6A==iCuxXhnNMFYnlMRk
-    //const response = await fetch("https://api.api-ninjas.com/v1/quotes?category=age.json");
-    //const movies = await response.json();
-    //console.log(movies);
 }
 
 
 
-
+var promptTextArray;
 function TimeLoop(){
     time++ 
     timeText.innerText = time + " seconds"
@@ -110,12 +84,17 @@ function TimeLoop(){
         
         console.log(wpmText + "this is your wpm")
         winText.innerText = "good job you won in "+ time+" seconds" + "with a wpm of " +wpm
+        alert("good job you won in "+ time+" seconds" + "with a wpm of " +wpm)
         time = 0;
         wordCount = 0;
         
     }
 }
+
+
+
 function startTimeLoop(){
+    //promptTextArray = textToGive.split("")
     setInterval(TimeLoop,1000);
     console.log('called to start time loop')
 }
@@ -123,17 +102,3 @@ function startTimeLoop(){
 //on start stuff
 startTimeLoop();
 setText(exampleText)
-/*
-var category = 'happiness'
-$.ajax({
-    method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,age
-    headers: { 'X-Api-Key': 'YOUR_API_KEY'},
-    contentType: 'application/json',
-    success: function(result) {
-        console.log(result);
-    },
-    error: function ajaxError(jqXHR) {
-        console.error('Error: ', jqXHR.responseText);
-    }
-});*/
