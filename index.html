@@ -10,24 +10,60 @@
 
 <body>
     <h1>Type Pro</h1>
-    <div tag = "typeBox">
-        <div class ="center">
-            <p id = "givenText" class = "givenText"></p>
 
-        <input id = "textInput" onpaste = "return disablePaste()" onkeyup="typing()">
-        </div>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="classic.html">Classic</a></li> 
+        <li><a href="typeracer.html">TypeRacer</a></li>
+        <li><a href="monkeytype.html">MonkeyType</a></li>
 
-        <p id="wpmText">WPM: </p>
-        <p id = timeText>time </p> 
-        <p id = "accuracyText">accuracy</p>
-        <p id = "winText"></p>
-        <button  id = ajaxButton onclick = logMovies()>Get a new String to type</button>
-        <p>Type on top of text</p>
-        <input type="checkbox">
-        <a href = "typeracer.html">
-            <button href = "typeracer.html"> GO to typeracer</button>
-         </a>
+    </ul>
+    <div>
+        <h1>
+            High Scores
+        </h1>
+        <p id = "highscore">
+
+        </p>
+        <script>
+            x = document.cookie;
+            document.getElementById("highscore").innerText = x;
+        </script>
+
     </div>
+    <div>
+        <h1>
+            About Us:
+        </h1>
+        <P id = "aboutUS">
+            
+            Words fly, champions rise: Welcome to TypePro!
+            We're a passionate community of keyboard enthusiasts and speed demons united by one thing: the thrill of the typing race. Whether you're a seasoned wordsmith with lightning fingers or a curious newcomer looking to test your mettle, TypePro is your one-stop shop for all things typing competition.
+
+            Born from a love of language and fueled by friendly competition, we created this platform to:
+
+            Challenge typists of all skill levels: With races for every speed and preference, from beginner-friendly sprints to endurance marathons, we offer something for everyone.
+            Nurture a thriving community: Connect with fellow typing aficionados, share tips and tricks, and forge lasting friendships based on your shared passion.
+            Celebrate mastery and inspire growth: Recognize the achievements of top typists while providing a supportive environment for everyone to improve their skills.
+            Make typing fun and engaging: Our intuitive platform and diverse range of features keep things exciting, challenging, and always entertaining.
+            We believe that typing is more than just a skill – it's a gateway to self-expression, improved productivity, and even a healthy dose of adrenaline. With TypePro, you can:
+
+            Push your limits: Hone your accuracy and speed, set personal bests, and climb the leaderboards to claim your typing glory.
+            Discover new challenges: Explore different race formats, test your skills in themed events, and keep things fresh and exciting.
+            Connect with the world: Compete against typists from across the globe, build friendships, and learn from one another.
+            Have a blast: In the end, it's all about enjoying the thrill of the race, celebrating the power of words, and having fun in a supportive community.
+            So, are you ready to unleash your inner typing champion? Join us today and experience the adrenaline rush of TypePro!
+
+            Remember to replace TypePro with your actual website name!
+
+            Bonus: You can personalize this further by adding details about your team, the inspiration behind the website, or specific features that make your platform unique.
+        </P>
+
+    </div>
+    
+
+
+   
 </body>
-<script src = script.js></script>
+
 </html>

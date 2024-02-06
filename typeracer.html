@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href ="style.css" >
+
     <title>typeracer</title>
+
 </head>
 <body>
-    <h1>NOT IMPLEMENTED YET SRY :[</h1>
+    
+
+    <h1>Typeracer Mode</h1>
+
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="classic.html">Classic</a></li> 
+        <li><a href="typeracer.html">TypeRacer</a></li>
+        <li><a href="monkeytype.html">MonkeyType</a></li>
+
+    </ul>
+
+    <p> race against other players!</p>
+    <img class = "horses" id = "horse1" src="walking horse.png" width = "50"; height="50">
+    <img  id = "horse2" src="walking horse.png" width = "50"; height="50">
+    <img class = "horses" id = "horse3" src="walking horse.png" width = "50"; height="50">
+    <img class = "horses" id = "horse4" src="walking horse.png" width = "50"; height="50">
+    <div tag = "typeBox">
+        <div class ="center">
+            <p id = "givenText" class = "givenText">fdggd</p>
+
+        <input id = "textInput" onpaste = "return disablePaste()" onkeyup="typing()">
+        </div>
+
+        <p id="wpmText">WPM: </p>
+        <p id = timeText>time </p> 
+        <p id = "accuracyText">accuracy</p>
+        <p id = "winText"></p>
+        <button  id = ajaxButton onclick = logMovies()>New Race</button>
+        <p>Type on top of text</p>
+        <input type="checkbox">
+        
+    </div>
+
 </body>
+<script src = typeracer.js></script>
+
+
 </html>

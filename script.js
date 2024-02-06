@@ -91,7 +91,13 @@ function TimeLoop(){
     }
 }
 
-
+function addCookiesHighScore(){
+   //document.cookie = "highscore = "+wpm +"wpm;"
+   document.cookie = "highscore = wpm"+wpm;
+   x = document.cookie
+   let decodedCookie = decodeURIComponent(document.cookie);
+   console.log(decodedCookie)
+}
 
 function startTimeLoop(){
     //promptTextArray = textToGive.split("")
